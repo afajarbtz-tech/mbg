@@ -127,3 +127,71 @@ Hasilnya akan disimpan dalam file CSV yang sesuai.
 *   **Database SQLite:** Semua artikel yang berhasil di-scrape dan dianalisis akan tersimpan dalam file `mbg_analytics.db`. Anda dapat menggunakan tools seperti `DB Browser for SQLite` untuk menjelajahi data dan melihat hasil analisis sentimennya.
 
 
+
+
+---
+
+## 📊 Navigasi Sentimen Publik dengan BGN Public Insight Dashboard MBG 2025
+
+**BGN Public Insight Dashboard untuk MBG 2025** adalah sebuah aplikasi analitik canggih yang dirancang untuk memantau opini publik dan mendukung proses peningkatan layanan program MBG. Mencakup data dari 1 Januari 2025 hingga 2 Februari 2026, dasbor ini menyajikan pandangan komprehensif tentang sentimen publik melalui berbagai visualisasi data dan fitur interaktif.
+
+### 1. Ringkasan Eksekutif: Sekilas Opini Publik
+
+Saat membuka dasbor, pengguna akan disambut oleh tab **"Ringkasan Eksekutif"** yang memberikan gambaran umum tentang indikator kinerja utama (KPI), yaitu:
+*   **Total masukan:** 4.858
+*   **Tingkat negativitas:** 46,8%
+*   **Indeks suasana (*mood index*):** -0,33
+*   **Topik teratas:** Sekolah
+*   **Sumber teratas:** detik
+
+Di bawah metrik ini, beberapa visualisasi memberikan konteks lebih dalam:
+*   **Garis waktu "Jumlah Artikel"** yang dipecah berdasarkan sentimen (Negatif, Netral, Positif) dari Januari 2025 hingga Februari 2026.
+*   **Diagram donat** yang merepresentasikan distribusi sentimen secara keseluruhan: 46,8% Negatif, 39,6% Netral, dan 13,6% Positif.
+*   **Tabel "Crisis Brief (Ringkas)"** yang mencantumkan artikel individual dengan detail seperti tanggal, sumber, topik, judul, dan skor kepercayaan dari model IndoBERT, memudahkan identifikasi berita pemicu tren sentimen.
+*   **Garis "Lonjakan berita NEG per hari"** yang menyoroti hari-hari dengan peningkatan signifikan dalam artikel berita negatif.
+
+### 2. Analisis Sentimen Mendalam: Memahami Tren
+
+Tab **"Tren Sentimen (lebih detail)"** menawarkan wawasan mendalam tentang perubahan sentimen dari waktu ke waktu. Pengguna dapat mengatur tingkat agregasi data: **Harian, Mingguan, atau Bulanan**. Analisis detail lebih lanjut tersedia melalui:
+*   **"Analisis Bulanan Detail"** yang menampilkan diagram area bertumpuk untuk persentase sentimen bulanan.
+*   **"Tabel Ringkasan Bulanan"** yang menyediakan data numerik untuk setiap bulan, termasuk total artikel, persentase positif/negatif, dan indeks suasana.
+*   **"Heatmap Tren Bulanan"** yang memberikan rincian visual persentase sentimen harian dalam satu bulan terpilih.
+*   **"Public Mood Index (RoBERTa vs IndoBERT)"** untuk membandingkan indeks suasana dari dua model analisis sentimen yang berbeda.
+*   **"Model Agreement (ringkas)"** yang menunjukkan seberapa sering klasifikasi sentimen dari kedua model tersebut selaras.
+
+### 3. Memahami Diskusi Utama: Topik dan Kata Kunci
+
+Tab **"Topik & Kata Kunci"** membantu pengguna memahami subjek utama dalam wacana publik.
+*   **"Topik Dominan (Semua Label)"** adalah diagram batang yang menampilkan jumlah artikel untuk berbagai topik seperti Anggaran, Kualitas, Distribusi, Kebijakan, Sekolah, Menu Sehat, dan Lainnya. **"Sekolah"** teridentifikasi sebagai topik paling dominan.
+*   **"Word Cloud (Global Keywords)"** adalah visualisasi dinamis yang menyorot kata kunci global, dengan ukuran kata mencerminkan frekuensi kemunculannya. Kata kunci seperti "SPPG Nasional," "Bargizi," "anak," "sekolah," dan "kasus keracunan" ditampilkan mencolok.
+
+### 4. Lanskap Media: Siapa Penggerak Narasi?
+
+Di bawah tab **"Media"**, dasbor menawarkan wawasan tentang cakupan dan pengaruh media:
+*   **"Media Leaderboard"** adalah tabel yang mencantumkan berbagai sumber media beserta jumlah sebutan, sebutan negatif, tingkat negativitas, dan topik dominan yang diliput.
+*   Diagram batang memvisualisasikan **jumlah "sebutan" dari setiap sumber**, memberikan perbandingan yang jelas tentang keterlibatan media.
+
+### 5. Eksplorasi Data Mendalam: Bagian Detail Data
+
+Tab **"Data Detail (Filter-aware)"** menyediakan akses ke data mentah yang mendasari analitik.
+*   Tabel komprehensif mencantumkan artikel berita individual dengan kolom seperti ID, Tanggal Publikasi, sumber, topik, sentimen hasil model, judul, dan tautan.
+*   Pengguna dapat memilih untuk **"Tampilkan kedua hasil model"** (RoBERTa dan IndoBERT) dalam tabel.
+*   Tabel mendukung penyaringan dan memungkinkan pengguna untuk **"Download CSV (hasil filter)"**, memudahkan ekstraksi data spesifik untuk analisis lebih lanjut.
+
+### 6. Memberdayakan Wawasan: Kemampuan Pemfilteran Dinamis
+
+Panel filter yang kokoh di sisi kiri dasbor meningkatkan kegunaan dan eksplorasi data. Pengguna dapat memfilter berdasarkan:
+*   **Label sentimen:** Memilih model analisis sentimen yang digunakan (RoBERTa Indonesia atau IndoBERT).
+*   **Pencarian judul konten:** Mencari kata kunci spesifik dalam judul artikel. Misalnya, mencari **"keracunan"** akan memperbarui seluruh dasbor untuk menunjukkan data yang relevan dengan kata kunci tersebut.
+*   **Rentang tanggal:** Menentukan periode analisis yang diinginkan.
+*   **Sumber:** Memfilter berdasarkan sumber media tertentu (misalnya, detik, kompas).
+*   **Topik:** Memfilter berdasarkan topik berita (misalnya, Distribusi, Kualitas).
+*   **Sentimen:** Memfilter berdasarkan jenis sentimen (Positif, Netral, Negatif).
+
+Selain itu, aplikasi juga mendukung **unggah data baru dalam format CSV** dan menjalankan **analisis sentimen pada data baru** tersebut, menjadikannya alat yang sangat fleksibel untuk pemantauan dan peningkatan layanan publik.
+
+### Kesimpulan
+
+**BGN Public Insight Dashboard untuk MBG 2025** adalah platform yang kokoh dan multifaset untuk memahami sentimen publik. Dengan beragam visualisasi data, analisis mendalam, dan kemampuan pemfilteran yang fleksibel, dasbor ini memberdayakan pengguna untuk dengan cepat memahami opini publik, mengidentifikasi isu-isu yang muncul, melacak liputan media, dan memperoleh wawasan yang dapat ditindaklanjuti untuk pengambilan keputusan strategis dalam konteks program MBG.
+
+---
