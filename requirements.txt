@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+plotly
+matplotlib
+wordcloud
+transformers
+torch
+sentencepiece
+accelerate
+Sastrawi
+python-dateutil
+tqdm
